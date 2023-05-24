@@ -25,9 +25,9 @@ $intdata = [
     "15",
     "3",
 ];
-function multByTwo(int $element) :int{
-    return $element * 2;
+function multByTwo(int $element) :void{
+   echo $element * 2 .'<br>';;
 }
 foreach($intdata as $item){
-    echo multByTwo((int)$item).'<br>';
+     multByTwo((int)$item);
 }
